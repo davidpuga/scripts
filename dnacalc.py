@@ -6,6 +6,17 @@ DNASeq = 'ATGAAC'
 
 print ( 'Sequence ' + DNASeq )
 
-SeqLength = len ( DNASeq )
+SeqLength = float (len ( DNASeq ) )
 
-print ( SeqLength )
+#print ( 'Length is ' + SeqLength ) can't be concatenated because the 1st element is a string and the 2nd, a floating point
+
+print ( 'Length is ' + str ( SeqLength ) )
+
+
+NumberA = DNASeq.count ( 'A' )
+#strings have a built-in function .count
+NumberT = DNASeq.count ( 'T' )
+NumberC = DNASeq.count ( 'C' )
+NumberG = DNASeq.count ( 'G' )
+
+print ( 'A: ' + str ( NumberA / SeqLength ) )
